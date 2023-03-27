@@ -1,0 +1,34 @@
+.board{
+    background-color:rgb(47, 234, 47);
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: 5rem auto;
+    box-shadow: 1px 1px 15px #ccc;
+    user-select: none;
+    cursor: pointer;
+}
+
+.board_tiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+
+    color: #333;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.board_tiles:active{
+    background-color: aqua;
+}
+
+.player{
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
